@@ -1,164 +1,215 @@
 :root {
-    --theme-color-one: #1A8DFF;
-    --theme-color-two: #8F8F8F;
-    --theme-color-three: #F05053;
-    --text-color-one: #ffffff;
-    --text-color-two: #524F4F;
-
+  --theme-color-one: #1a8dff;
+  --theme-color-two: #8f8f8f;
+  --theme-color-three: #f05053;
+  --text-color-one: #ffffff;
+  --text-color-two: #524f4f;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Muli', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Muli", sans-serif;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 /* Navbar starts from here 😏 */
 .navBar {
-    background-color: var(--theme-color-one);
-    width: 100%;
-    height: 45px;
-    z-index: 1000;
-    position: fixed;
-    top: 0;
-    display: flex;
-    justify-content: space-between;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0% 7% 0% 7%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
-        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: var(--theme-color-one);
+  width: 100vw;
+  height: 45px;
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0% 7% 0% 7%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .logo a {
-    color: var(--text-color-one);
-    text-decoration: none;
+  color: var(--text-color-one);
+  text-decoration: none;
 }
 
 .navbarLinks {
+  display: flex;
+  list-style-type: none;
+}
+
+.burgerMenu {
+  display: none;
+}
+
+@media screen and (max-width: 750px) {
+  .navbarLinks {
+    display: none;
+  }
+
+  .burgerMenu {
     display: flex;
-    list-style-type: none;
+    flex-direction: column;
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  .burgerMenu > div {
+    background-color: var(--theme-color-three);
+    width: 25px;
+    height: 4px;
+    margin: 3px;
+    border-radius: 5px;
+  }
 }
 
 .navbarLinks li {
-    padding-left: 7%;
-    font-size: 11px;
+  padding-left: 15px;
+  font-size: 11px;
 }
 
 .navbarLinks li a {
-    color: var(--text-color-one);
-    text-decoration: none;
-
+  color: var(--text-color-one);
+  text-decoration: none;
 }
 
 /* Cover page start from here 😈 */
-.coverPage {
-    /* margin-top: 100px; */
-    width: 100vw;
-    height: 100vh;
-    background-color: var(--theme-color-three);
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
 
+.coverPage {
+  width: 100%;
+  height: 80vh;
+  background-color: var(--theme-color-three);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .coverPageContent {
-    display: flex;
-    flex-direction: column;
-    width: 55vw;
-    height: 60vh;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-
+  display: flex;
+  flex-direction: column;
+  width: 55vw;
+  height: 60vh;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .tagLine {
-    padding-bottom: 20px;
-    font-size: 5vh;
+  padding-bottom: 20px;
+  font-size: 5vh;
 }
 
 .punchLine {
-    padding-bottom: 20px;
-    width: 40vw;
+  padding-bottom: 20px;
+  width: 40vw;
 }
 
-
 .coverPageButtons {
-    display: flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .coverPageButtons div:nth-child(1) {
-    padding: 10px 45px;
-    border-radius: 25px;
-    background-color: var(--theme-color-one);
-    border: 1px solid var(--theme-color-one);
-    cursor: pointer;
+  padding: 12px 50px;
+  border-radius: 25px;
+  background-color: var(--theme-color-one);
+  border: 1px solid var(--theme-color-one);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
 }
 
 .coverPageButtons div:nth-child(1):hover {
-    background-color: transparent;
-    border: 1px solid var(--text-color-one);
+  background-color: transparent;
+  border: 1px solid var(--text-color-one);
 }
 
 .coverPageButtons div:nth-child(2) {
-    padding: 10px 30px;
-    border-radius: 25px;
-    border: 1px solid var(--text-color-one);
-    cursor: pointer;
-    margin-left: 15px;
+  padding: 12px 35px;
+  border-radius: 25px;
+  border: 1px solid var(--text-color-one);
+  cursor: pointer;
+  margin: 10px;
 }
 
 .coverPageButtons div:nth-child(2):hover {
-    background-color: var(--theme-color-one);
-    border: 1px solid var(--theme-color-one);
-
+  background-color: var(--theme-color-one);
+  border: 1px solid var(--theme-color-one);
 }
+@media screen and (max-width: 750px) {
+  .coverPage {
+    height: 100vh;
+  }
+
+  .coverPageContent {
+    width: 90%;
+    height: 100vh;
+  }
+
+  .punchLine {
+    width: 80vw;
+  }
+
+  .coverPageButtons {
+    flex-direction: column;
+  }
+}
+/* Info start from here 👍 */
 
 .mainInfo {
-    width: 100vw;
-    height: 20vh;
-    background-color: var(--theme-color-two);
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-end;
+  width: 100%;
+  height: auto;
+  background-color: var(--theme-color-two);
+  display: flex;
+  justify-content: space-around;
 }
 
-.mainInfo>div {
-    margin: 5px;
-    display: flex;
-    font-size: 12px;
-    width: 25vw;
-    height: 19vh;
-    justify-content: center;
-    align-items: center;
-    padding: 20px 0px 20px 20px;
+@media screen and (max-width: 750px) {
+  .mainInfo {
+    flex-wrap: wrap;
+  }
 }
 
-.mainInfo>div:nth-child(2) {
-    width: 30vw;
-    justify-content: center;
-    padding: 0px 10px 0px 50px;
-    border-left: 1px solid var(--text-color-two);
-    border-right: 1px solid var(--text-color-two);
+.mainInfo > div {
+  margin: 10px;
+  display: flex;
+  font-size: 12px;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0px 20px 20px;
 }
 
-
+.mainInfo > div:nth-child(2) {
+  justify-content: center;
+  border-left: 1px solid var(--text-color-two);
+  border-right: 1px solid var(--text-color-two);
+}
+@media screen and (max-width: 750px) {
+  .mainInfo > div:nth-child(2) {
+    border: none;
+    border-top: 1px solid var(--text-color-two);
+    border-bottom: 1px solid var(--text-color-two);
+  }
+}
 .mainInfo img {
-    height: 80px;
-    border-radius: 50%;
-    border: 1px solid var(--text-color-two);
+  height: 80px;
+  border-radius: 50%;
+  border: 1px solid var(--text-color-two);
 }
 
 .mainInfo-textContent {
-
-    padding-left: 20px;
+  padding-left: 20px;
 }
