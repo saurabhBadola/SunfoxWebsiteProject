@@ -213,3 +213,161 @@ html {
 .mainInfo-textContent {
   padding-left: 20px;
 }
+/* WElcome page start from here */
+.welcomePage {
+  display: flex;
+  width: 100%;
+  height: 80vh;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--text-color-two);
+}
+.imageBackground {
+  background: url("https://images.pexels.com/photos/3558597/pexels-photo-3558597.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+  /* background-color: var(--theme-color-three); */
+  width: 50vw;
+  height: 60vh;
+}
+.welcomeText {
+  display: flex;
+
+  background-color: var(--text-color-two);
+  width: 35vw;
+  height: 60vh;
+}
+.welcomeText > div {
+  width: 28vw;
+  display: flex;
+  margin-left: 20px;
+  align-items: center;
+}
+/* Why-US page start from here */
+
+.why-us-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 80vh;
+  background-color: var(--theme-color-two);
+}
+.why-us-text {
+  width: 30vw;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.why-us-text > div {
+  line-height: 1.8;
+  width: 28vw;
+}
+.why-us-features {
+  width: 50vw;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+}
+.why-us-features-content {
+  width: 50vw;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  grid-template-areas:
+    "div1 div1 div1"
+    "div2 div2 div2";
+}
+
+.why-us-features-content > div {
+  width: 12vw;
+  height: 20vh;
+  margin: 10px;
+  text-align: center;
+}
+.why-us-features-content img {
+  border-radius: 50%;
+  margin-bottom: 5px;
+}
+/* our R & D LAB Section */
+
+.our-lab {
+  width: 100%;
+  height: 95vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.div-lab-inner {
+  width: 80%;
+  height: 85vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+.our-lab-heading {
+  text-align: center;
+  width: 70%;
+  line-height: 1.8;
+  padding: 10px;
+}
+
+.our-lab-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.our-lab-cards > div {
+  margin: 10px;
+  width: 20vw;
+  height: 50vh;
+  border: 1px solid black;
+  background-color: var(--theme-color-two);
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  line-height: 1.8;
+  padding: 10px;
+}
+.our-lab-cards h3 {
+  margin-bottom: 15px;
+}
+
+/* Area interest section start from here */
+
+.area-interest {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  /* justify-content: center; */
+  text-align: center;
+  flex-direction: column;
+  padding: 20px;
+}
+.area-interest h2{
+  margin-bottom: 30px;
+}
+.area-interest-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  grid-template-areas:
+    "div1 div1 div1"
+    "div2 div2 div2";
+}
+
+.area-interest-section div {
+  width: 20vw;
+  height: 32vh;
+  margin: 20px;
+}
+.area-interest-section img{
+  margin-bottom: 20px;
+}
+
