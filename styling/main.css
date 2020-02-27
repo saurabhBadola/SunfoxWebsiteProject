@@ -4,7 +4,7 @@
   --theme-color-three: #ef4d58;
   --text-color-one: #f6f5f5;
   --text-color-two: #373737;
-  --text-color-two: #ececec;
+  --text-color-three: #ececec;
 }
 
 * {
@@ -32,9 +32,11 @@ html {
   justify-content: space-between;
   align-items: center;
   padding: 0% 7% 0% 7%;
+}
+.navBarChanged {
+  background-color: var(--theme-color-three);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-
 .logo a {
   color: var(--text-color-one);
   text-decoration: none;
@@ -88,6 +90,36 @@ html {
 .navbarLinks li a {
   color: var(--text-color-one);
   text-decoration: none;
+}
+
+.responsiveNavParent {
+  display: none;
+}
+@media screen and (max-width: 750px) {
+  .responsiveNavParent {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-color:rgba(00, 00, 00, 0.6);
+    justify-content: flex-end;
+    position: fixed;
+    z-index: 500;
+  }
+  .responsiveNav {
+    width: 100%;
+    height: 100vh;
+    opacity: 1;
+    background-color: var(--text-color-two);
+    padding-top: 45px;
+    flex-direction: column;
+  }
+
+  .responsiveNav div {
+    display: flex;
+    justify-content: center;
+    padding: 3vw;
+    color: var(--text-color-one);
+  }
 }
 
 /* Cover page start from here 😈 */
@@ -181,55 +213,6 @@ html {
   }
 }
 
-/* Info start from here 👍 */
-/* 
-.mainInfo {
-  width: 100%;
-  height: auto;
-  background-color: var(--theme-color-two);
-  display: flex;
-  justify-content: space-around;
-}
-
-@media screen and (max-width: 750px) {
-  .mainInfo {
-    flex-wrap: wrap;
-  }
-}
-
-.mainInfo > div {
-  margin: 10px;
-  display: flex;
-  font-size: 12px;
-  justify-content: center;
-  align-items: center;
-  padding: 20px 0px 20px 20px;
-}
-
-.mainInfo > div:nth-child(2) {
-  justify-content: center;
-  border-left: 1px solid var(--text-color-two);
-  border-right: 1px solid var(--text-color-two);
-}
-
-@media screen and (max-width: 750px) {
-  .mainInfo > div:nth-child(2) {
-    border: none;
-    border-top: 1px solid var(--text-color-two);
-    border-bottom: 1px solid var(--text-color-two);
-  }
-}
-
-.mainInfo img {
-  height: 80px;
-  border-radius: 50%;
-  border: 1px solid var(--text-color-two);
-}
-
-.mainInfo-textContent {
-  padding-left: 20px;
-} */
-
 /* WElcome page start from here */
 .welcomePage {
   display: flex;
@@ -237,6 +220,7 @@ html {
   height: 100vh;
   align-items: center;
   justify-content: space-around;
+  background-color: var(--text-color-one);
 }
 
 .imageBackground {
@@ -277,7 +261,6 @@ html {
     width: 60vw;
     height: 40vh;
     order: 2;
-    /* border: 1px solid red; */
   }
   .imageBackground img {
     width: 65vw;
@@ -301,10 +284,9 @@ html {
   align-items: center;
   width: 100%;
   height: 100vh;
-  /* background-color: while; */
   background-image: url("../images/man-thinking.png");
   background-repeat: no-repeat;
-  background-color: var(--theme-color-two);
+  background-color: var(--text-color-three);
 }
 
 .why-us-page-bg {
@@ -425,10 +407,11 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: url("../images/tech-2.png"), url("../images/tech.png");
+  background-image: url("../images/tech-2.png"), url("../images/tech.png");
   background-repeat: no-repeat, no-repeat;
   background-position: left center, right center;
   background-size: 15vw, 40vw;
+  background-color: var(--text-color-one);
 }
 
 .div-lab-inner {
@@ -514,6 +497,7 @@ html {
   width: 60px;
   height: 60px;
 }
+
 .card {
   width: 20vw;
   height: 65vh;
@@ -553,7 +537,6 @@ html {
   }
 
   .our-lab-cards {
-    
     flex-wrap: wrap;
     height: auto;
     /* border:1px solid red; */
@@ -593,6 +576,7 @@ html {
   align-items: center;
   flex-direction: column;
   padding: 20px;
+  background-color: var(--text-color-one);
 }
 .area-interest h2 {
   margin-bottom: 4vh;
@@ -612,7 +596,6 @@ html {
   width: 20vw;
   height: 32vh;
   margin: 20px;
-  /* border:1px solid red; */
 }
 
 .area-interest-section img {
@@ -624,7 +607,6 @@ html {
 @media screen and (max-width: 750px) {
   .area-interest {
     height: auto;
-    /* border:2px solid #000; */
   }
 
   .area-interest h2 {
@@ -704,6 +686,7 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: var(--text-color-one);
 }
 
 .our-partners-pngs {
@@ -799,6 +782,7 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: var(--text-color-one);
 }
 
 .query-section-form {
@@ -887,7 +871,7 @@ html {
 .footer {
   width: 100%;
   height: 50vh;
-  background-color: var(--theme-color-two);
+  background-color: var(--text-color-three);
   display: flex;
   justify-content: space-around;
 }
@@ -922,7 +906,7 @@ html {
 
 .bottom {
   height: 7vh;
-  background-color: #000;
+  background-color: var(--theme-color-two);
   color: antiquewhite;
   display: flex;
   align-items: center;
