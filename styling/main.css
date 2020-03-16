@@ -185,7 +185,8 @@ html {
 .punchLine {
   padding-bottom: 20px;
   width: 40vw;
-  font-size: 23px;
+  font-size: 20px;
+  font-weight: lighter;
 }
 
 .coverPageButtons {
@@ -253,7 +254,7 @@ html {
   justify-content: space-around;
   background-color: var(--text-color-one);
   padding: 10vw 0 10vw 0;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 .imageBackground {
@@ -262,7 +263,7 @@ html {
   justify-content: center;
   align-items: center;
   justify-content: center;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 .imageBackground img {
@@ -276,7 +277,7 @@ html {
   /* height: 380px; */
   /* margin-left: 100px; */
   line-height: 1.8;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 .welcomeText > div {
@@ -342,7 +343,7 @@ html {
   background-repeat: no-repeat;
   background-color: var(--text-color-three);
   padding: 10vw;
-  border: 1px solid #000;
+  /* border: 1px solid #000; */
 }
 
 .why-us-text {
@@ -352,10 +353,12 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
+  /* border: 1px solid red; */
 }
 
-.why-us-text > div {
+.why-us-text div {
   line-height: 1.8;
+  /* border: 1px solid black; */
 
   text-align: justify;
 }
@@ -365,22 +368,30 @@ html {
   font-size: 15px;
   font-weight: lighter;
 }
-
+@media screen and (max-width: 1000px) {
+  .why-us-text > div {
+    width: 35vw;
+  }
+}
 @media screen and (max-width: 750px) {
   .why-us-page {
     flex-wrap: wrap;
-    padding-top: 3vh;
+    /* padding-top: 30vh; */
+    padding: 3vw;
   }
 
   .why-us-text {
     width: 90vw;
-    border: 1px solid red;
+    padding-top: 7vh;
+    /* height:100px */
     /* padding: 15px; */
   }
 
-  .why-us-text > div {
+  .why-us-text div {
     text-align: center;
     line-height: 1.2;
+    width: 100%;
+    padding-bottom: 30px;
   }
 
   .why-us-text h6 {
@@ -395,7 +406,7 @@ html {
   display: flex;
   align-items: center;
   margin-left: 20px;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 
   /* border:1px solid red; */
 }
@@ -413,7 +424,9 @@ html {
     "div1 div1 div1"
     "div2 div2 div2";
 }
-
+.why-us-features-content p {
+  font-size: 13px;
+}
 .why-us-features-content > div {
   /* width: 12vw; */
   /* height: 20vh; */
@@ -427,6 +440,7 @@ html {
 
 .why-us-features-content > div h6 {
   font-weight: bold;
+  font-size: 14px;
   padding-bottom: 5px;
 }
 
@@ -434,7 +448,7 @@ html {
   border-radius: 50%;
   margin-bottom: 5px;
   width: 70px;
-  height: 70px;
+  /* height: 70px; */
   background-color: var(--theme-color-one);
   display: flex;
   justify-content: center;
@@ -448,9 +462,6 @@ html {
 @media screen and (max-width: 1000px) {
   .why-us-features-content {
     width: 55vw;
-  }
-  .why-us-text > div {
-    width: 35vw;
   }
 }
 @media screen and (max-width: 750px) {
@@ -492,22 +503,24 @@ html {
   background-size: 15vw, 40vw;
   background-color: var(--text-color-one);
   padding: 100px;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 .div-lab-inner {
-  width: 80%;
+  width: 100%;
   /* height: 85vh; */
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-direction: column;
+  /* border:1px solid red; */
 }
 
 .our-lab-heading {
   text-align: center;
-  width: 80%;
+  width: 80vw;
   padding: 10px;
+  /* border: 1px solid red; */
 }
 
 .our-lab-heading p {
@@ -539,15 +552,21 @@ html {
   border-top: solid 1px #000;
   z-index: -1;
 }
-
+.our-lab-heading p{
+  /* font-weight: bold; */
+  line-height: 1.6;
+  font-size: 15px
+}
+/* /////////////////////// */
 .our-lab-cards {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 75vw;
+  width: 80vw;
   justify-content: space-between;
   border-bottom: 1px solid var(--text-color-two);
   color: var(--text-color-two);
+  /* border:1px solid #000; */
 }
 
 .our-lab-cards > div {
@@ -561,6 +580,7 @@ html {
   text-align: center;
   line-height: 1.8;
   padding: 10px;
+  /* border: 1px solid red; */
 }
 
 .cardImage {
@@ -568,7 +588,7 @@ html {
   margin-bottom: 5px;
   width: 70px;
   height: 70px;
-  background-color: white;
+  background-color: var(--text-color-three);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -583,8 +603,8 @@ html {
 }
 
 .card {
-  width: 300px;
-  height: 320px;
+  width: 20vw;
+  height: 340px;
   border-radius: 3px;
   display: flex;
   align-items: center;
@@ -627,6 +647,7 @@ html {
   .card {
     width: 27vw;
     height: 70vh;
+    margin: 10px;
   }
 }
 
@@ -649,6 +670,7 @@ html {
 @media screen and (max-width: 750px) {
   .our-lab {
     height: auto;
+    padding-top: 30px;
   }
 
   .div-lab-inner {
@@ -657,7 +679,8 @@ html {
   }
 
   .our-lab-heading {
-    width: 90%;
+    width: 90vw;
+
     padding-top: 7vh;
   }
 
@@ -665,6 +688,7 @@ html {
     padding-top: 1vh;
     line-height: 1.5;
     font-size: 16px;
+    
   }
 
   .our-lab-cards {
@@ -683,8 +707,8 @@ html {
   }
 
   .card {
-    width: 55vw;
-    /* height: 50vh; */
+    width: 65vw;
+    height: 50vh;
     border-radius: 3px;
     display: flex;
     align-items: center;
@@ -731,9 +755,9 @@ html {
   align-items: center;
   flex-direction: column;
   padding: 100px;
-  background-color: var(--text-color-one);
+  background-color: var(--text-color-three);
   color: var(--text-color-two);
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
 }
 
 .area-interest h2 {
@@ -741,7 +765,7 @@ html {
 }
 
 .area-interest-section {
-  width: 70vw;
+  width: 80vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -755,9 +779,9 @@ html {
   margin-bottom: 5px;
 }
 
-.area-interest-section h6 {
-  font-size: 12px;
-  font-weight: lighter;
+.area-interest-section p {
+  font-size: 13px;
+  /* font-weight: bold; */
 }
 
 .area-interest-section div {
@@ -786,11 +810,12 @@ html {
   }
 
   .area-interest-section {
-    width: 100%;
+    width: 90vw;
     grid-template-areas:
       "div1 div1"
       "div2 div2 "
       "div3 div3";
+    /* border:1px solid red; */
   }
 
   .area-interest-section div {
@@ -813,7 +838,7 @@ html {
 .buy-spandan {
   width: 100%;
   height: 280px;
-  border: 1px solid #000;
+  /* border: 1px solid #000; */
   background: url("../images/spandanBack.png");
   /* background-attachment: fixed; */
   /* background-repeat: no-repeat; */
@@ -920,8 +945,7 @@ html {
   padding-left: 12px;
   /* font-size: 12px; */
 }
-.our-impacts-text p {
-}
+
 .world-map {
   background: url("../images/map.png");
   width: 65%;
@@ -936,25 +960,28 @@ html {
   .our-impacts-main {
     background-color: var(--theme-color-one);
     width: 100%;
-    height: 55vh;
+    height: 90vh;
   }
 
   .our-impacts {
-    height: 55vh;
-    width: 90vw;
+    /* height: 55vh; */
+    /* width: 90vw; */
     /* border: 1px solid red; */
+    flex-direction: column;
   }
 
   .our-impacts-text {
-    width: 40%;
+    width: 80vw;
+    order: 2;
     /* border: 1px solid red; */
     line-height: 1.8;
   }
 
   .world-map {
+    order: 1;
     background: url("../images/map.png");
-    width: 65%;
-    height: 25vh;
+    width: 90vw;
+    height: 35vh;
     background-size: 100% 100%;
   }
 }
@@ -963,7 +990,7 @@ html {
 
 .query-section {
   width: 100%;
-  border: 1px solid #000;
+  /* border: 1px solid #000; */
   /* height: 90vh; */
   padding: 60px;
   display: flex;
@@ -1065,15 +1092,21 @@ html {
 
 .footer {
   width: 100%;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   /* height: 50vh; */
   background-color: var(--text-color-one);
   display: flex;
+  justify-content: center;
+  align-items: center;
+  /* justify-content: space-around; */
+}
+.innerFooter {
+  width: 90vw;
+  display: flex;
   justify-content: space-around;
 }
-
 .footer div {
-  margin-top: 5%;
+  margin: 4% 0% 1% 0%;
 }
 
 .footer h4 {
@@ -1089,15 +1122,14 @@ html {
 }
 
 @media screen and (max-width: 750px) {
-  .footer {
-    height: auto;
+  .innerFooter {
+    /* height: auto; */
     display: flex;
     flex-direction: column;
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
-
-  .footer div {
+  .innerFooter div {
     margin-top: 2%;
     text-align: center;
     margin: 5vw;
