@@ -34,11 +34,6 @@ html {
   padding: 0% 7% 0% 7%;
 }
 
-.navBarChanged {
-  background-color: var(--theme-color-three);
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
 .logo a {
   color: var(--text-color-one);
   text-decoration: none;
@@ -86,7 +81,7 @@ html {
 
   .changeTopSlice {
     position: relative;
-    top: 9px;
+    top: 10px;
     transform: rotate(-45deg);
   }
 
@@ -134,7 +129,7 @@ html {
     width: 100%;
     height: 80vh;
     opacity: 1;
-    padding-top: 45px;
+    /* padding-top: 45px; */
     flex-direction: column;
   }
 
@@ -161,11 +156,13 @@ html {
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  padding: 200px;
+  /* padding: 200px; */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  /* box-sizing: border-box; */
 }
 
 .coverPageContent {
@@ -227,7 +224,7 @@ html {
 
 @media screen and (max-width: 750px) {
   .coverPage {
-    height: 100vh;
+    /* height: 100vh; */
   }
 
   .coverPageContent {
@@ -241,6 +238,14 @@ html {
 
   .coverPageButtons {
     flex-direction: column;
+  }
+  .coverPageButtons div:nth-child(1),
+  .coverPageButtons div:nth-child(2) {
+    width: 40vw;
+    height: 6vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 
@@ -552,10 +557,10 @@ html {
   border-top: solid 1px #000;
   z-index: -1;
 }
-.our-lab-heading p{
+.our-lab-heading p {
   /* font-weight: bold; */
   line-height: 1.6;
-  font-size: 15px
+  font-size: 15px;
 }
 /* /////////////////////// */
 .our-lab-cards {
@@ -635,7 +640,7 @@ html {
   .our-lab-cards > div {
     margin: 10px;
     width: 30vw;
-    height: 85vh;
+    height: 55vh;
   }
 
   .our-lab-heading p {
@@ -647,7 +652,6 @@ html {
   .card {
     width: 27vw;
     height: 70vh;
-    margin: 10px;
   }
 }
 
@@ -688,7 +692,6 @@ html {
     padding-top: 1vh;
     line-height: 1.5;
     font-size: 16px;
-    
   }
 
   .our-lab-cards {

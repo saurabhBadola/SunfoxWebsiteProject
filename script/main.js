@@ -3,12 +3,44 @@ let selectNav = document.querySelector('.navBar');
 
 window.onscroll = function myFunction() {
 
-    if (document.body.scrollTop > 60 || document.documentElement.scrollTop > 60)
-        selectNav.classList.add('navBarChanged');
-    else
-        selectNav.classList.remove('navBarChanged');
+    let defaultShadow = "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)";
+    function navStyle(color, shadow = defaultShadow) {
+        selectNav.style.backgroundColor = color;
+        selectNav.style.boxShadow = shadow;
+    }
+
+    if (window.innerHeight / 5 > window.scrollY) {
+        navStyle('transparent', 'none');
+
+    }
+    else if (window.innerHeight > window.scrollY && window.innerHeight / 5 < window.scrollY) {
+        navStyle('#ef4d58');
+    }
+    else if (window.innerHeight * 2 > window.scrollY && window.innerHeight < window.scrollY) {
+        navStyle('#1a8dff')
+
+    }
+    else if (window.innerHeight * 3 > window.scrollY && window.innerHeight * 2 < window.scrollY) {
+
+        navStyle('#1a8dff')
+    }
+    else if (window.innerHeight * 4 > window.scrollY && window.innerHeight * 3 < window.scrollY) {
+        navStyle('#ef4d58')
+    }
+    else if (window.innerHeight * 5 > window.scrollY && window.innerHeight * 4 < window.scrollY) {
+        navStyle('#1a8dff')
+    }
+    else if (window.innerHeight * 6 > window.scrollY && window.innerHeight * 5 < window.scrollY) {
+        navStyle('#ef4d58');
+
+    }
+
+
 
 }
+
+
+
 
 
 // burger menu
