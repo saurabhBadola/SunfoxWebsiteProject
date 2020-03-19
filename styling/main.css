@@ -18,7 +18,6 @@ html {
   scroll-behavior: smooth;
 }
 
-
 /* Navbar starts from here 😏 */
 .navBar {
   background-color: transparent;
@@ -96,13 +95,19 @@ html {
   font-size: 12px;
   font-weight: bold;
 }
+@media screen and (max-width: 1000px) {
+  .navbarLinks li {
+    padding: 7px;
+    font-size: 10px;
+  }
+}
 .navbarLinks li:hover {
   padding-bottom: 8px;
-  border-bottom: 2px solid var(--text-color-one);
+  border-bottom: 2px solid var(--text-color-two);
   position: relative;
 }
 .navbarLinks li a {
-  color: var(--text-color-one);
+  color: var(--text-color-two);
   text-decoration: none;
 }
 
@@ -245,18 +250,17 @@ html {
 
 /* WElcome page start from here */
 
-
 .welcome-page-main {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: var(--text-color-one);
 }
 .welcomePage {
   display: flex;
   width: 90%;
   align-items: center;
   justify-content: space-around;
-  background-color: var(--text-color-one);
   padding: 10vw 0 10vw 0;
 }
 
@@ -276,7 +280,6 @@ html {
 .welcomeText {
   display: flex;
   width: 350px;
-  
 }
 
 .welcomeText > div {
@@ -438,7 +441,6 @@ html {
   margin: 14px;
   width: 40px;
 }
-
 
 @media screen and (max-width: 1050px) {
   .why-us-features {
@@ -635,8 +637,8 @@ html {
   }
 
   .card {
-    width: 27vw;
-    height: 55vh;
+    width: 30vw;
+    height: 60vh;
   }
 }
 
@@ -1065,7 +1067,7 @@ our-partners-inner {
   }
 }
 
-/* Footer section start from here */
+/* Footer section start from here  */
 
 .footer {
   width: 100%;
@@ -1109,7 +1111,7 @@ our-partners-inner {
 .fa-facebook-f {
   padding: 4px 3px 0px 6px;
 }
-.fa-instagram{
+.fa-instagram {
   padding: 3px 3px 0px 4px;
 }
 @media screen and (max-width: 750px) {
