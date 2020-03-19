@@ -1,6 +1,9 @@
 // changing background color on scroll 
 let selectNav = document.querySelector('.navBar');
 
+
+
+
 window.onscroll = function myFunction() {
 
     let defaultShadow = "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)";
@@ -14,29 +17,44 @@ window.onscroll = function myFunction() {
 
     }
     else if (window.innerHeight > window.scrollY && window.innerHeight / 5 < window.scrollY) {
+
         navStyle('#ef4d58');
+        
     }
     else if (window.innerHeight * 2 > window.scrollY && window.innerHeight < window.scrollY) {
         navStyle('#1a8dff');
+        
 
     }
     else if (window.innerHeight * 3 > window.scrollY && window.innerHeight * 2 < window.scrollY) {
 
         navStyle('#1a8dff');
+        
     }
     else if (window.innerHeight * 4 > window.scrollY && window.innerHeight * 3 < window.scrollY) {
         navStyle('#ef4d58')
+        
     }
     else if (window.innerHeight * 5 > window.scrollY && window.innerHeight * 4 < window.scrollY) {
         navStyle('#1a8dff')
+        
     }
     else if (window.innerHeight * 6 > window.scrollY && window.innerHeight * 5 < window.scrollY) {
         navStyle('#ef4d58');
+        
 
     }
 
 
 }
+
+
+// function staySame() {
+//     if (document.querySelector('.responsiveNavParent').classList.contains("responsiveNavParentChanged")) {
+//         navStyle('transparent', 'none');
+//     }
+// }
+
 
 // carousel in JavaScript
 
@@ -51,10 +69,8 @@ images[2] = "images/image3.jpg";
 
 function changeImage() {
 
-
-
     document.querySelector('.coverPage').style.backgroundImage = `url(${images[i]})`;
-    // console.log(file)
+
     if (i < images.length - 1) {
         i++;
     }
@@ -65,10 +81,6 @@ function changeImage() {
     setTimeout('changeImage()', time);
 }
 window.onload = changeImage;
-
-
-
-
 
 // burger menu
 
