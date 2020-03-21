@@ -110,7 +110,6 @@ html {
   color: var(--text-color-two);
   text-decoration: none;
 }
-
 .responsiveNavParent {
   display: none;
 }
@@ -353,8 +352,10 @@ html {
   justify-content: center;
   align-items: center;
 }
-
-.why-us-text div {
+.why-us-text h2 {
+  padding-bottom: 20px;
+}
+.why-us-text h6 {
   line-height: 1.8;
   text-align: justify;
 }
@@ -868,19 +869,25 @@ html {
 
 .our-partners {
   width: 100%;
-  height: 30vh;
+  height: auto;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: var(--text-color-one);
+  background-color: #fff;
 }
-our-partners-inner {
-  width: 90%;
-  height: 100%;
+.our-partners-inner {
+  padding-top: 70px;
+  text-align: center;
+}
+.our-partners-inner h3 {
+  padding-bottom: 30px;
 }
 .our-partners img {
   width: 100%;
   height: auto;
+
+  /* margin-bottom: 50px; */
 }
 @media screen and (max-width: 750px) {
   .our-partners {
