@@ -1,4 +1,20 @@
+var slowLoad = window.setTimeout(function () {
+    const getText = document.querySelector('.pre-loader h2');
+    getText.textContent = "Slow Internet connection...";
+}, 3000);
+
+
+window.addEventListener('load', () => {
+    // removing the loading page after fetching the data
+    const loader = document.querySelector('.pre-loader');
+    loader.className += ' hidden';
+    window.clearTimeout(slowLoad);
+});
+
+
+
 // changing background color on scroll 
+
 window.onscroll = function myFunction() {
 
     let defaultShadow = "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)";
