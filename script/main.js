@@ -77,15 +77,21 @@ window.onload = changeImage;
 
 // burger menu for responsive design
 document.querySelector('.burgerMenu').onclick = function () {
+    document.querySelector('.responsiveNavParent').classList.add('responsiveNavParentChanged');
+    document.querySelector('.crossOne').classList.add("changeTopSlice");
+    document.querySelector('.crossTwo').classList.add("changeBottomSlice");
+}
+
+function changeOnClick() {
+    document.querySelector('.responsiveNavParent').classList.remove('responsiveNavParentChanged');
+    document.querySelector('.crossOne').classList.remove("changeTopSlice");
+    document.querySelector('.crossTwo').classList.remove("changeBottomSlice");
+}
+
+document.querySelector('.crossSign').onclick = function () {
     changeOnClick();
 
-    document.querySelector('.responsiveNav a').onclick = function () {
-        changeOnClick();
-    }
 }
-function changeOnClick() {
-    document.querySelector('.responsiveNavParent').classList.toggle('responsiveNavParentChanged');
-    document.querySelector('.topSlice').classList.toggle("changeTopSlice");
-    document.querySelector('.middleSlice').classList.toggle("changeMiddleSlice");
-    document.querySelector('.bottomSlice').classList.toggle("changeBottomSlice");
+document.querySelector('.responsiveNav a').onclick = function () {
+    changeOnClick();
 }

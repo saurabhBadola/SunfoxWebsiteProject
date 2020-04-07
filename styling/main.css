@@ -76,7 +76,7 @@ html {
   background-color: transparent;
   width: 100vw;
   height: 55px;
-  z-index: 1000;
+  z-index: 900;
   position: fixed;
   top: 0;
   display: flex;
@@ -127,20 +127,6 @@ html {
     margin: 3px;
     border-radius: 5px;
   }
-
-  .changeTopSlice {
-    position: relative;
-    top: 10px;
-    transform: rotate(-45deg);
-  }
-
-  .changeMiddleSlice {
-    transform: rotate(50deg);
-  }
-
-  .changeBottomSlice {
-    display: none;
-  }
 }
 
 .navbarLinks li {
@@ -170,22 +156,45 @@ html {
 @media screen and (max-width: 750px) {
   .responsiveNavParent {
     display: none;
-    width: 100%;
-    height: 100%;
-    background-color: var(--text-color-two);
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    z-index: 500;
   }
 
   .responsiveNavParentChanged {
     display: flex;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--text-color-two);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  .crossSign {
+    position: absolute;
+    width: 40px;
+    height: 45px;
+    top: 0;
+    right: 0;
+    margin: 12px 30px 10px 10px;
+  }
+  .crossSign div {
+    width: 30px;
+    height: 4px;
+    background-color: #fff;
+    border-radius: 10px;
+    position: relative;
+  }
+  .changeTopSlice {
+    top: 16px;
+    transform: rotate(-47deg);
+  }
+  .changeBottomSlice {
+    transform: rotate(47deg);
+    top: 12px;
   }
 
   .responsiveNav {
     width: 100%;
-    height: 80vh;
+    height: 85vh;
     opacity: 1;
     flex-direction: column;
   }
@@ -223,18 +232,18 @@ html {
   display: flex;
   flex-direction: column;
   width: 55vw;
+  height:50vh;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
 
 .tagLine {
-  padding-bottom: 20px;
+  padding-bottom: 30px;
   font-size: 40px;
 }
 
 .punchLine {
-  padding-bottom: 20px;
   width: 40vw;
   font-size: 20px;
   font-weight: lighter;
@@ -279,11 +288,19 @@ html {
 @media screen and (max-width: 750px) {
   .coverPageContent {
     width: 90%;
-    height: 100vh;
+    height: 60vh;
+  }
+
+  .tagLine {
+    padding-bottom: 30px;
+    font-size: 36px;
+    width: 90vw;
   }
 
   .punchLine {
+    padding-bottom: 30px;
     width: 80vw;
+    font-size: 20px;
   }
 
   .coverPageButtons {
@@ -292,8 +309,8 @@ html {
 
   .coverPageButtons div:nth-child(1),
   .coverPageButtons div:nth-child(2) {
-    width: 40vw;
-    height: 6vh;
+    width: 45vw;
+    height: 7vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1224,4 +1241,5 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
