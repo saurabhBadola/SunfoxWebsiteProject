@@ -1059,7 +1059,8 @@ html {
 
 .query-section {
   width: 100%;
-  padding: 60px;
+  /* padding: 60px; */
+  padding: 17vh 0px 17vh 0px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1077,7 +1078,7 @@ html {
 }
 
 .query-section-form h6 {
-  margin-bottom: 20px;
+  margin-bottom: 28px;
 }
 
 .query-section-form input[type="text"] {
@@ -1159,10 +1160,10 @@ html {
 .footer {
   width: 100%;
   background-color: var(--text-color-one);
-  /* background-color: red; */
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 12vh 0px 12vh 0px;
 }
 
 .innerFooter {
@@ -1171,17 +1172,13 @@ html {
   justify-content: space-around;
 }
 
-.footer div {
-  margin: 4% 0% 1% 0%;
-}
-
-.footer h4 {
+.innerFooter h4 {
   margin-bottom: 10px;
   font-weight: bold;
   color: var(--text-color-two);
 }
 
-.footer h6 {
+.innerFooter h6 {
   font-size: 15px;
   padding: 5px 5px 5px 1px;
   font-weight: lighter;
@@ -1208,6 +1205,9 @@ html {
   padding-top: 4px;
 }
 @media screen and (max-width: 750px) {
+  .footer {
+  padding: 0;
+}
   .innerFooter {
     display: flex;
     flex-direction: column;
@@ -1221,20 +1221,17 @@ html {
   }
 
   .innerFooter div h4 {
-    text-align: center;
+    padding-left: 5vw;
   }
 
   .innerFooter div h6 {
-    padding-left: 9vw;
-  }
-
-  #shareAt h6 {
-    padding-left: 11vw;
+    padding-left: 5vw;
   }
 
   .terms,
   .homeLinks {
     border-bottom: 1px solid rgb(219, 219, 219);
+    padding-bottom: 3vh ;
   }
 }
 @media screen and (max-width: 550px) {
