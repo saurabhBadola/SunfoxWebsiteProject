@@ -93,5 +93,5 @@ document.querySelector('.crossSign').onclick = function () {
 
 }
 document.querySelector('.responsiveNav a').onclick = function () {
-    changeOnClick();
+    changeOnClick()
 }
