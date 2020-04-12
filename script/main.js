@@ -11,8 +11,6 @@ window.addEventListener('load', () => {
     window.clearTimeout(slowLoad);
 });
 
-
-
 // changing background color on scroll 
 
 window.onscroll = function myFunction() {
@@ -57,8 +55,10 @@ var time = 4000;
 var path = '';
 
 images[0] = "images/bgImage1.png";
-images[1] = "images/bgImage2.png";
-images[2] = "images/bgImage3.png";
+images[1] = "images/bgImage2.jpeg";
+images[2] = "images/bgImage3.jpeg";
+images[3] = "images/bgImage4.jpeg";
+images[4] = "images/bgImage5.jpeg";
 
 function changeImage() {
 

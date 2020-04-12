@@ -56,19 +56,9 @@ html {
   text-align: center;
 }
 
-/* hiding the pre-loader */
-
 .hidden {
-  animation: fadeOut 1s;
-  animation-fill-mode: forwards;
-}
-
-@keyframes fadeOut {
-  100% {
-    opacity: 0;
-    display: none;
-    z-index: 0;
-  }
+  z-index: 0;
+  display: none;
 }
 
 /* Navbar starts from here 😏 */
@@ -142,11 +132,11 @@ html {
 }
 .navbarLinks li:hover {
   padding-bottom: 8px;
-  border-bottom: 2px solid var(--text-color-two);
+  border-bottom: 2px solid var(--text-color-one);
   position: relative;
 }
 .navbarLinks li a {
-  color: var(--text-color-two);
+  color: var(--text-color-one);
   text-decoration: none;
 }
 .responsiveNavParent {
@@ -241,21 +231,26 @@ html {
 .tagLine {
   padding-bottom: 30px;
   font-size: 40px;
+  color: var(--text-color-one);
+  text-shadow: 3px 3px 6px var(--text-color-two);
 }
 
 .punchLine {
   width: 40vw;
   font-size: 20px;
   font-weight: lighter;
+  color: var(--text-color-one);
+  text-shadow: 3px 3px 6px var(--text-color-two);
 }
 
 .coverPageButtons {
   display: flex;
   align-items: center;
   justify-content: center;
+  color: var(--text-color-one);
 }
 
-.coverPageButtons div:nth-child(1) {
+.coverPageButton-one {
   padding: 12px 50px;
   border-radius: 25px;
   background-color: var(--theme-color-one);
@@ -267,12 +262,12 @@ html {
   margin: 10px;
 }
 
-.coverPageButtons div:nth-child(1):hover {
+.coverPageButton-one:hover {
   background-color: transparent;
   border: 1px solid var(--text-color-one);
 }
 
-.coverPageButtons div:nth-child(2) {
+.coverPageButton-two {
   padding: 12px 35px;
   border-radius: 25px;
   border: 1px solid var(--text-color-one);
@@ -280,7 +275,7 @@ html {
   margin: 10px;
 }
 
-.coverPageButtons div:nth-child(2):hover {
+.coverPageButton-two:hover {
   background-color: var(--theme-color-one);
   border: 1px solid var(--theme-color-one);
 }
@@ -307,8 +302,10 @@ html {
     flex-direction: column;
   }
 
-  .coverPageButtons div:nth-child(1),
-  .coverPageButtons div:nth-child(2) {
+  /* :nth-child(1),
+  .coverPageButtons div:nth-child(2) */
+
+  .coverPageButtons div {
     width: 45vw;
     height: 7vh;
     display: flex;
@@ -1206,8 +1203,8 @@ html {
 }
 @media screen and (max-width: 750px) {
   .footer {
-  padding: 0;
-}
+    padding: 0;
+  }
   .innerFooter {
     display: flex;
     flex-direction: column;
@@ -1231,7 +1228,7 @@ html {
   .terms,
   .homeLinks {
     border-bottom: 1px solid rgb(219, 219, 219);
-    padding-bottom: 3vh ;
+    padding-bottom: 3vh;
   }
 }
 @media screen and (max-width: 550px) {
