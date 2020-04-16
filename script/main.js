@@ -1,8 +1,8 @@
+// Detecting slow internet connection
 var slowLoad = window.setTimeout(function () {
-    const getText = document.querySelector('.pre-loader h2');
-    getText.textContent = "Slow Internet connection...";
-}, 3000);
-
+    const getText = document.querySelector('.pre-loader h3');
+    getText.textContent = "Slow Internet connection..";
+}, 4000);
 
 window.addEventListener('load', () => {
     // removing the loading page after fetching the data
@@ -15,34 +15,27 @@ window.addEventListener('load', () => {
 
 window.onscroll = function myFunction() {
 
-    let defaultShadow = "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)";
-    function navStyle(color, shadow = defaultShadow) {
+    function navStyle(ourColor, ourShadow, ourTextColor) {
+        // Changing navbar color
         let selectNav = document.querySelector('.navBar');
+        selectNav.style.backgroundColor = ourColor;
+        selectNav.style.boxShadow = ourShadow;
+        // Changing text color
+        let textColor = document.querySelectorAll('.navbarLinks li a');
+        textColor.forEach(eachElement => eachElement.style.color = ourTextColor);
+        // Changing responsive BurgerMenu Color
+        let burgerMenuBg = document.querySelectorAll('.burgerMenu div');
+        burgerMenuBg.forEach(eachElement => eachElement.style.backgroundColor = ourTextColor);
 
-        selectNav.style.backgroundColor = color;
-        selectNav.style.boxShadow = shadow;
     }
 
     if (window.innerHeight / 5 > window.scrollY) {
-        navStyle('transparent', 'none');
+        navStyle('transparent', 'none', '#f6f5f5');
     }
-    else if (window.innerHeight > window.scrollY && window.innerHeight / 5 < window.scrollY) {
-        navStyle('#ef4d58');
-    }
-    else if (window.innerHeight * 2 > window.scrollY && window.innerHeight < window.scrollY) {
-        navStyle('#1a8dff');
-    }
-    else if (window.innerHeight * 3 > window.scrollY && window.innerHeight * 2 < window.scrollY) {
-        navStyle('#1a8dff');
-    }
-    else if (window.innerHeight * 4 > window.scrollY && window.innerHeight * 3 < window.scrollY) {
-        navStyle('#ef4d58')
-    }
-    else if (window.innerHeight * 5 > window.scrollY && window.innerHeight * 4 < window.scrollY) {
-        navStyle('#1a8dff')
-    }
-    else if (window.innerHeight * 6 > window.scrollY && window.innerHeight * 5 < window.scrollY) {
-        navStyle('#ef4d58');
+    else {
+        let ourShadow = "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)";
+        navStyle('#f6f5f5', ourShadow, '#373737');
+
     }
 
 }
@@ -95,3 +88,30 @@ document.querySelector('.crossSign').onclick = function () {
 document.querySelector('.responsiveNav a').onclick = function () {
     changeOnClick()
 }
+
+
+
+//  JUNK CODE ❌❌
+    // else if (window.innerHeight > window.scrollY && window.innerHeight / 5 < window.scrollY) {
+    //     navStyle('#ef4d58');
+    // }
+    // else if (window.innerHeight * 2 > window.scrollY && window.innerHeight < window.scrollY) {
+    //     navStyle('#1a8dff');
+    // }
+    // else if (window.innerHeight * 3 > window.scrollY && window.innerHeight * 2 < window.scrollY) {
+    //     navStyle('#1a8dff');
+    // }
+    // else if (window.innerHeight * 4 > window.scrollY && window.innerHeight * 3 < window.scrollY) {
+    //     navStyle('#ef4d58')
+    // }
+    // else if (window.innerHeight * 5 > window.scrollY && window.innerHeight * 4 < window.scrollY) {
+    //     navStyle('#1a8dff')
+    // }
+    // else if (window.innerHeight * 6 > window.scrollY && window.innerHeight * 5 < window.scrollY) {
+    //     navStyle('#ef4d58');
+    // }
+
+
+// Changing HOver color of navbar
+// let hoverColor = document.querySelectorAll('.navbarLinks li');
+// hoverColor.forEach(eachElement => eachElement.style.borderBottom = `2px solid ${ourTextColor}`);

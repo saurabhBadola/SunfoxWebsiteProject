@@ -35,8 +35,8 @@ html {
   border: 3px solid #ffffff;
   border-radius: 50%;
   border-top: 3px solid transparent;
-  width: 70px;
-  height: 70px;
+  width: 60px;
+  height: 60px;
   animation: spin 2s linear infinite;
 }
 
@@ -50,7 +50,7 @@ html {
   }
 }
 
-.pre-loader h2 {
+.pre-loader h3 {
   margin-top: 5vh;
   width: 80vw;
   text-align: center;
@@ -138,6 +138,9 @@ html {
 .navbarLinks li a {
   color: var(--text-color-one);
   text-decoration: none;
+}
+.navbarLinks li a:hover {
+font-weight: bold;
 }
 .responsiveNavParent {
   display: none;
@@ -1221,16 +1224,14 @@ html {
     padding: 0;
     /* border: 1px solid red; */
   }
-   .innerFooter {
+  .innerFooter {
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: 90vw;
-
   }
-    .innerFooter div {
-    width:35vw;
+  .innerFooter div {
+    width: 35vw;
     margin: 7vh auto 0vh auto;
-
   }
 
   .otherLinks,
@@ -1251,13 +1252,13 @@ html {
     border-bottom: 1px solid rgb(219, 219, 219);
     padding-bottom: 3vh;
   }
-  .homeLinks{
+  .homeLinks {
     padding-top: 6px;
   }
 }
 @media screen and (max-width: 550px) {
-    .innerFooter div {
-    width:41vw;
+  .innerFooter div {
+    width: 41vw;
   }
 }
 
