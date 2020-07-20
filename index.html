@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <link rel="stylesheet" href="styling/main.css" />
     <script defer src="script/main.js"></script>
-
+   
   <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/8c46f0148e.js" crossorigin="anonymous"></script>
 
@@ -41,7 +41,7 @@
         <h3><a href="#services"> SERVICES</a></h3>
       </li>
       <li>
-        <h3><a href="#team"> TEAM</a></h3>
+        <h3><a href="https://sunfox.in/spandan/team.php"> TEAM</a></h3>
       </li>
       <li>
         <h3><a href="#careers"> CAREERS</a></h3>
@@ -50,7 +50,8 @@
         <h3><a href="#product"> PRODUCT</a></h3>
       </li>
       <li>
-        <h3><a href="#contact"> CONTACT</a></h3>
+        <h3><a href="https://sunfox.in/spandan/contact.php"> CONTACT</a></h3>
+        <!-- <h3><a href="#contact"> CONTACT</a></h3> -->
       </li>
     </ul>
     <!-- Hanburger menu for responsive web page -->
@@ -65,28 +66,30 @@
         <div class="crossOne"></div>
         <div class="crossTwo"></div>
       </div>  
-    <div class="responsiveNav">
+    <div class="responsiveNav" data-spy="scroll" data-target=".navbar">
+      <div class="navbar">
       <div>
-        <h3><a href="">HOME</a></h3>
+        <h3><a href="#home">HOME</a></h3>
       </div>
       <div>
-        <h3><a href="">ABOUT</a></h3>
+        <h3><a href="#about">ABOUT</a></h3>
       </div>
       <div>
-        <h3><a href="">SERVICES</a></h3>
+        <h3><a href="#services">SERVICES</a></h3>
       </div>
       <div>
-        <h3><a href="">TEAM</a></h3>
+        <h3><a href="https://sunfox.in/spandan/team.php">TEAM</a></h3>
       </div>
       <div>
         <h3><a href="">CAREERS</a></h3>
       </div>
       <div>
-        <h3><a href="">PRODUCT</a></h3>
+        <h3><a  href="#product">PRODUCT</a></h3>
       </div>
       <div>
-        <h3><a href="">CONTACT</a></h3>
+        <h3><a href="https://sunfox.in/spandan/contact.php">CONTACT</a></h3>
       </div>
+    </div>
     </div>
   </div>
 
@@ -107,7 +110,7 @@
   </div>
 
   <!-- welcome page start from here  -->
-  <div class="welcome-page-main">
+  <div class="welcome-page-main" id="home">
     <div class="welcomePage">
       <div class="welcomeText">
         <div>
@@ -138,7 +141,7 @@
   </div>
   <!-- Why us page start from here -->
 
-  <div class="why-us-page">
+  <div class="why-us-page" id="about">
 
     <div class="why-us-text">
       <div>
@@ -159,8 +162,8 @@
         </h6>
       </div>
     </div>
-
-    <div class="why-us-features">
+ 
+    <div class="why-us-features" >
       <div class="why-us-features-content">
         <div>
           <div class="iconDiv"><img src="images/focus.png" alt="" /></div>
@@ -210,7 +213,7 @@
 
   <!--  our R & D LAB Section -->
 
-  <div class="our-lab">
+  <div class="our-lab" id="services">
     <div class="div-lab-inner">
       <div class="our-lab-heading">
         <h4>OUR</h4>
@@ -352,7 +355,7 @@
   </div>
   <!-- Buy spandan section start from here -->
 
-  <div class="buy-spandan">
+  <div class="buy-spandan" id="product">
     <div class="buy-spandan-text">
       <h2>Get your portable Spandan ECG</h2>
       <h5>Get your spandan device and start tracking your cardiac</h5>
@@ -360,12 +363,42 @@
     </div>
   </div>
 
+
+<!--sarthak  -->
+
+<!-- single modal -->
+<div class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">×</span>
+    <h2 class="modal-header"></h2>
+    <p class="modal-body"></p>
+  </div>
+</div>
+
+  <!-- till here -->
+
   <!-- our partners section start from here -->
   <div class="our-partners">
 
     <div class="our-partners-inner our-partners-inner-top">
       <h3>Featured In</h1>
-        <img src="images/appreciation_logo.png" alt="" />
+     <!-- added icon sarthak   -->
+        <img src="images/appreciation_logo.png" alt="Workplace" usemap="#workmap">
+
+        <map name="workmap">
+          <area shape="rect" coords="0,0,115,83" id="btnB12" class="modal-btn" data-modal-id="B12"  alt="Phone" >
+          <area shape="rect" coords="116,0,307,83" id="btnB02" class="modal-btn" data-modal-id="B02" alt="Phone" >
+          <area shape="rect" coords="304,0,470,83" id="btnB22" class="modal-btn" data-modal-id="B22" alt="Phone">
+          <area shape="rect" coords="458,0,650,83" id="btnB32" class="modal-btn" data-modal-id="B32" alt="Phone">
+          <area shape="rect" coords="644,0,812,83" id="btnB42" class="modal-btn" data-modal-id="B42" alt="Phone">
+          <area shape="rect" coords="810,0,982,83" id="btnB52" class="modal-btn" data-modal-id="B52" alt="Phone">
+          <area shape="rect" coords=" 124,83,300 ,164" id="btnB62" class="modal-btn" data-modal-id="B62" alt="Phone">
+          <area shape="rect" coords=" 304,83, 500,164" id="btnB72" class="modal-btn" data-modal-id="B72" alt="Phone">
+          <area shape="rect" coords=" 490,83, 660,164" id="btnB82" class="modal-btn" data-modal-id="B82" alt="Phone">
+          <area shape="rect" coords=" 658,83, 846,164" id="btnB92" class="modal-btn" data-modal-id="B92" alt="Phone">
+        </map>
+     <!-- till here    -->
     </div>
     <div class="our-partners-inner">
       <h3>Appreciated By</h1>
@@ -449,12 +482,12 @@
       </div>
       <div class="homeLinks">
         <h4>HOMELINKS</h4>
-        <h6>Home</h6>
-        <h6>About</h6>
-        <h6>Features</h6>
-        <h6>How it works?</h6>
-        <h6>Spandan AI</h6>
-        <h6>Blogs</h6>
+        <h6> <a style="color: #000000; text-decoration: none;" href="#home" > Home</a> </h6>
+        <h6><a style="color: #000000; text-decoration: none;" href="#about">About</a></h6>
+        <h6><a style="color: #000000; text-decoration: none;" href="https://sunfox.in/spandan/about.php">About</a></h6>
+        <h6><a style="color: #000000; text-decoration: none;" href=" ">How it works?</a></h6>
+        <h6><a style="color: #000000; text-decoration: none;" href="https://sunfox.in/spandan/">Spandan AI</a></h6>
+        <h6> <a style="color: #000000; text-decoration: none;" href="https://sunfox.in/spandan/blogs.php "> Blogs</a></h6>
       </div>
       <div class="otherLinks">
         <h4>OTHER LINKS</h4>
@@ -464,11 +497,15 @@
         <h6>Refund policy</h6>
       </div>
       <div class="shareAt">
-        <h4>SHARE AT</h4>
-        <h6> <i class="fab fa-facebook-f"></i> Facebook</h6>
-        <h6><i class="fab fa-twitter"></i> Twitter </h6>
-        <h6><i class="fab fa-linkedin-in"></i> Linkedin </h6>
-        <h6><i class="fab fa-instagram"></i> Instagram </h6>
+        <h4>SHARE AT</h4>  
+        <h6><a href="https://www.facebook.com/Sunfox.tech/" style="color: #000000;
+    text-decoration: none;" target="_blank"><i class="fab fa-facebook-f"></i> Facebook</a></h6>
+        <h6><a href="https://twitter.com/SunfoxTech" style="color: #000000;
+    text-decoration: none;" target="_blank"><i class="fab fa-twitter"></i> Twitter </a></h6>
+        <h6><a href="https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany-beta%2F13320385%2F" style="color: #000000;
+    text-decoration: none;" target="_blank"><i class="fab fa-linkedin-in"></i> Linkedin </i> </a></h6>
+        <h6><a href="https://www.instagram.com/sunfox_tech/" style="color: #000000;
+    text-decoration: none;" target="_blank"><i class="fab fa-instagram"></i> Instagram</a> </h6>
       </div>
     </div>
 
@@ -477,6 +514,10 @@
   <div class="bottom">
     <h4>Sunfox Technologies Pvt. Ltd. - Copyright 2020</h3>
   </div>
+  <script
+  src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
 </body>
 
 </html>
