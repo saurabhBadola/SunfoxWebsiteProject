@@ -8,10 +8,11 @@
 }
 
 * {
+  font: open;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 html {
@@ -219,6 +220,10 @@ font-weight: bold;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  /* for the tranparent property */
+  background-color: rgb(52, 56, 54) ;
+  background-blend-mode: overlay;
 }
 
 .coverPageContent {
@@ -953,6 +958,23 @@ font-weight: bold;
   align-items: center;
   background-color: #fff;
 }
+.tooltip_templates { display: none; 
+  font-family: 'Open Sans', sans-serif !important;
+}
+
+.tooltipster-sidetip.tooltipster-shadow.tooltipster-shadow-customized .tooltipster-box {
+  margin: 0px 3px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.tooltipster-sidetip.tooltipster-shadow.tooltipster-shadow-customized .tooltipster-content {
+	color: black;
+  padding: 8px;
+  
+  margin: 0px 3px;
+}
+
+
 .our-partners-inner {
   padding-bottom: 55px;
   text-align: center;
@@ -1325,3 +1347,9 @@ font-weight: bold;
   text-decoration: none;
   cursor: pointer;
 }
+
+
+
+
+
+

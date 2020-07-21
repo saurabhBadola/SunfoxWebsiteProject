@@ -89,69 +89,15 @@ document.querySelector('.responsiveNav a').onclick = function () {
     changeOnClick()
 }
 
-//modal script for image map  sarthak
-var modalData = {
-    "B12": {
-      "header":"Modal B12",
-      "body":"Here's the text for Modal s1"
-    },
-    "B02": {
-      "header":"Modal B02",
-      "body":"Here's the text for Modal s1"
-    },
-    "B22": {
-        "header":"Modal B02",
-        "body":"Here's the text for Modal s3"
-      },
-      "B32": {
-        "header":"Modal B02",
-        "body":"Here's the text for Modal s4"
-      },
-      "B42": {
-        "header":"Modal B02",
-        "body":"Here's the text for Modal Bs502"
-      },
-      "B52": {
-        "header":"Modal B02",
-        "body":"Here's the text for Modal s6"
-      },
-      "B62": {
-        "header":"Modal B02",
-        "body":"Here's the text for Modal s7"
-      },
-      "B72": {
-        "header":"Modal B02",
-        "body":"Here's the text for Modal s8"
-      },
-      "B82": {
-        "header":"Modal B02",
-        "body":"Here's the text for Modal s9"
-      },
-      "B92": {
-        "header":"Modal B02",
-        "body":"Here's the text for Modal s10"
-      }
-  }
-  
-  //open modal on mouseover replace mouse over by click to open mouse on click
-  $('.modal-btn').on('mouseover', function(e) {
-    e.preventDefault();
-    var modalId = $(e.currentTarget).data('modal-id');
-    $('.modal-header').text(modalData[modalId].header);
-    $('.modal-body').text(modalData[modalId].body);
-    $('.modal').show();
+// tooltip
+$(document).ready(function () {
+  $('.tooltip').tooltipster({
+    contentCloning: true,
+    animation: 'fade',
+    delay: 200,
+    theme: ['tooltipster-shadow', 'tooltipster-shadow-customized']
   });
-//close model on mpouseout
-  $('.modal-btn').on('mouseout', function(e) {
-        $('.modal').hide();
-    });
-    
-  //close modal on mouse click
-//   $('.close').on('click', function(e){
-//       $('.modal').hide();
-//   });
-  
-
+});
 //  JUNK CODE ❌❌
     // else if (window.innerHeight > window.scrollY && window.innerHeight / 5 < window.scrollY) {
     //     navStyle('#ef4d58');
