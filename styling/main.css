@@ -75,7 +75,7 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0% 7% 0% 7%;
+  padding: 0% 1% 0% 1%;
 }
 
 .logo a {
@@ -194,7 +194,7 @@ font-weight: bold;
   }
 
   .responsiveNav div {
-    display: flex;
+    display: block;
     justify-content: center;
     padding: 6vw;
 
