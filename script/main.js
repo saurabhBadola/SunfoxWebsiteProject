@@ -26,11 +26,18 @@ window.onscroll = function myFunction() {
         // Changing responsive BurgerMenu Color
         let burgerMenuBg = document.querySelectorAll('.burgerMenu div');
         burgerMenuBg.forEach(eachElement => eachElement.style.backgroundColor = ourTextColor);
-
+        
+        //script for changing the logo while scrolling down
+        var x = document.getElementById("logo");
+        x.setAttribute("src", "images/sunfox_logo_black.png");
     }
 
     if (window.innerHeight / 5 > window.scrollY) {
         navStyle('transparent', 'none', '#f6f5f5');
+        
+         //script for changing the logo while scrolling up
+        var x = document.getElementById("logo");
+        x.setAttribute("src", "images/sunfox_logo_white.png");
     }
     else {
         let ourShadow = "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)";
