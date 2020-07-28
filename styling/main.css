@@ -1044,12 +1044,12 @@ font-weight: bold;
 
 .world-map img {
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 
 @media screen and (max-width: 1000px) {
   .world-map {
-    width: 70%;
+    width: 100%;
   }
 }
 
@@ -1133,6 +1133,16 @@ font-weight: bold;
   padding: 10px;
 }
 
+.query-section-form select {
+  border: 1px solid var(--text-color-two);
+  border-radius: 20px;
+  width: 29vw;
+  height: 40px;
+  padding: 10px;
+  width: auto;
+  background-color: white;
+}
+
 .query-section-form > input[type="text"]:focus {
   outline: 0;
 }
@@ -1157,6 +1167,15 @@ font-weight: bold;
   margin-top: 15px;
   background-color: var(--theme-color-one);
   color: var(--text-color-one);
+}
+
+#selectrole
+{
+  background-color: aliceblue;
+  color: var(--text-color-two);
+  font-size: 15px;
+  padding: 15px;
+}
 }
 
 .query-section-form > button:focus {
@@ -1188,6 +1207,13 @@ font-weight: bold;
     margin-top: 12px;
     height: 5vh;
   }
+
+  .query-section-form select {
+    width: 87vw;
+    margin-top: 12px;
+    height: 5vh;
+  }
+
 
   .query-section-form > textarea {
     width: 87vw;
